@@ -4,7 +4,11 @@ import initialState from "./initialState";
 const operationsReducer = (state = initialState, action) => {
     switch (action.type) {
         case actions.ADD :
-           return Object.assign({}, state, { operation : state.operation + '+' });
+            if(state.firstNumber === '') {
+                state.firstNumber = 0;
+            }
+            return Object.assign({}, state, { operation : state.operation + '+' });
+
         case actions.USE_NUMBER :
             if((state.firstNumber !== '' && state.operation === '') || state.firstNumber === '') {
                 state.firstNumber += action.payload;
@@ -13,6 +17,12 @@ const operationsReducer = (state = initialState, action) => {
             if(state.firstNumber !== '' && state.operation !== ''){
                 state.secondNumber += action.payload;
                 return  Object.assign({}, state, { count : state.secondNumber})
+            }
+            return ;
+
+        case actions.RESULT :
+            if(state.operation === '+') {
+                return Object.assign({}, state, { count : parseInt(state.firstNumber) + parseInt(state.secondNumber)})
             }
         default : return state;
     }

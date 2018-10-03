@@ -12,3 +12,9 @@ export const useNumber = (payload) => {
       payload: payload
     }
 };
+
+export const getResult = () => {
+    return {
+        type: actionType.RESULT
+    }
+};
