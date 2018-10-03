@@ -1,12 +1,12 @@
 import React from 'react';
 
 class Add extends React.Component {
-    render() {
-        const { useAddOperation } = this.props;
 
+    render() {
+        const { add } = this.props;
         return (
             <div>
-                <button onClick={()=> useAddOperation()}>+</button>
+                <button onClick={()=> add()}>+</button>
             </div>
         )
     }

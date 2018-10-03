@@ -1,5 +1,2 @@
-export const VALUE_ONE = 'VALUE_ONE';
+export var INCREASE = "INCREASE";
 
-export const ADD_OPERATION = 'ADD_OPERATION';
-
-export var RESULT = 'RESULT';

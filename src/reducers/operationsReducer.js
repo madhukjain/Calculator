@@ -1,12 +1,12 @@
 import * as actions from "../actions/ActionTypes";
-import initialState from "./initialState";
 
-const operationsReducer = (state = initialState, action) => {
+const operationsReducer = (state = {count : 1}, action) => {
     switch (action.type) {
-        case actions.ADD_OPERATION :
-            state.operation = action.payload;
+        case actions.INCREASE :
+            // state.count = state.count + 1;
+           return Object.assign({},state,{count:state.count+1});
+        default :
             return state;
-        default : return state;
     }
 };
 

@@ -1,15 +1,13 @@
 import React from 'react'
 import AddContainer from "../containers/Add";
-import NumberButtonsContainer from "../containers/NumberButtons";
-import ResultContainer from "../containers/Result";
+import AnswerContainer from "../containers/Answer";
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <NumberButtonsContainer />
+                <AnswerContainer />
                 <AddContainer />
-                <ResultContainer />
             </div>
         )
     }
