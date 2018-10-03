@@ -6,6 +6,7 @@ class Numbers extends React.Component {
         return (
             <div>
                 <button onClick={() => useSelectedNumber(1)}>1</button>
+                <button onClick={() => useSelectedNumber(2)}>2</button>
             </div>
         )
     }
