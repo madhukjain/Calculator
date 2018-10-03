@@ -1,7 +1,7 @@
-import {addOperation} from "../actions/index";
-import Add from "../components/Add";
+import {addOperation} from "../../actions/index";
+import Add from "../../components/operationButtons/Add";
 import {connect} from "react-redux";
-import {increase} from "../actions";
+import {increase} from "../../actions/index";
 
 const mapDispatchToProps = (dispatch) => ({
     add: () => {

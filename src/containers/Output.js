@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import Answer from "../components/Answer";
+import Output from "../components/Output";
 
 const mapStateToProps = state => {
     return {
@@ -7,6 +7,6 @@ const mapStateToProps = state => {
     }
 };
 
-const AnswerContainer = connect(mapStateToProps,null)(Answer);
+const AnswerContainer = connect(mapStateToProps,null)(Output);
 
 export default AnswerContainer;

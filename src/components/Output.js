@@ -1,6 +1,6 @@
 import React from "react";
 
-class Answer extends React.Component {
+class Output extends React.Component {
 
     render(){
         return (
@@ -11,4 +11,4 @@ class Answer extends React.Component {
     }
 }
 
-export default Answer;
+export default Output;
