@@ -7,6 +7,6 @@ const mapStateToProps = state => {
     }
 };
 
-const AnswerContainer = connect(mapStateToProps,null)(Output);
+const OutputContainer = connect(mapStateToProps,null)(Output);
 
-export default AnswerContainer;
+export default OutputContainer;

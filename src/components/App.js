@@ -1,12 +1,14 @@
 import React from 'react'
 import AddContainer from "../containers/operations/Add";
-import AnswerContainer from "../containers/Output";
+import OutputContainer from "../containers/Output";
+import NumbersContainer from "../containers/numbers/Numbers";
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <AnswerContainer />
+                <OutputContainer />
+                <NumbersContainer />
                 <AddContainer />
             </div>
         )

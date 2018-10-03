@@ -5,3 +5,10 @@ export const increase = () => {
         type: actionType.ADD,
     }
 };
+
+export const useNumber = (payload) => {
+    return {
+      type: actionType.USE_NUMBER,
+      payload: payload
+    }
+};
