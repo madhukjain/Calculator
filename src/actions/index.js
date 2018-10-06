@@ -6,10 +6,9 @@ export const increase = () => {
     }
 };
 
-export const useNumber = (payload) => {
+export const multiply = () => {
     return {
-      type: actionType.USE_NUMBER,
-      payload: payload
+        type: actionType.MULTIPLY
     }
 };
 
@@ -18,3 +17,11 @@ export const getResult = () => {
         type: actionType.RESULT
     }
 };
+
+export const useNumber = (payload) => {
+    return {
+      type: actionType.USE_NUMBER,
+      payload: payload
+    }
+};
+

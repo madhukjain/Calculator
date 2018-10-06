@@ -22,8 +22,28 @@ const operationsReducer = (state = initialState, action) => {
 
         case actions.RESULT :
             if(state.operation === '+') {
-                return Object.assign({}, state, { count : parseInt(state.firstNumber) + parseInt(state.secondNumber)})
+                return Object.assign({}, state, {
+                    count : parseInt(state.firstNumber) + parseInt(state.secondNumber),
+                    firstNumber : '',
+                    secondNumber : '',
+                    operation: ''
+                })
             }
+            if(state.operation === '*') {
+                return Object.assign({}, state, {
+                    count: parseInt(state.firstNumber) * parseInt(state.secondNumber),
+                    firstNumber: '',
+                    secondNumber: '',
+                    operation: ''
+                })
+            }
+
+        case actions.MULTIPLY :
+            if(state.firstNumber === '') {
+                state.firstNumber = 0;
+            }
+            alert('I am multiply')
+            return Object.assign({}, state, { operation : state.operation + '*'});
         default : return state;
     }
 };
