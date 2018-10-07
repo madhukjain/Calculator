@@ -18,6 +18,12 @@ export const divide = () => {
     }
 };
 
+export const subtract = () => {
+  return {
+      type: actionType.SUBTRACT
+  }
+};
+
 export const getResult = () => {
     return {
         type: actionType.RESULT

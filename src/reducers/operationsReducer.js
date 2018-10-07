@@ -43,19 +43,35 @@ const operationsReducer = (state = initialState, action) => {
                     operation: ''
                 })
             }
+            if(state.operation === '-') {
+                return Object.assign({}, state, {
+                    count: parseInt(state.firstNumber) - parseInt(state.secondNumber),
+                    firstNumber: '',
+                    secondNumber: '',
+                    operation: ''
+                })
+            }
+
 
         case actions.MULTIPLY :
             if(state.firstNumber === '') {
                 state.firstNumber = 0;
             }
             return Object.assign({}, state, { operation : state.operation = '*'});
-        default : return state;
 
         case actions.DIVIDE :
             if(state.firstNumber === '') {
                 state.firstNumber = 0;
             }
             return Object.assign({}, state, { operation : state.operation = '/'});
+
+        case actions.SUBTRACT :
+            if(state.firstNumber === '') {
+                state.firstNumber = 0;
+            }
+            return Object.assign({}, state, { operation : state.operation = '-'});
+
+        default : return state;
     }
 };
 

@@ -6,6 +6,7 @@ import ResultContainer from "../containers/operations/Result";
 import OperationContainer from "../containers/Operation";
 import MultiplyContainer from "../containers/operations/Multiply";
 import DivideContainer from "../containers/operations/Divide";
+import SubtractContainer from "../containers/operations/Subtract";
 
 class App extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class App extends React.Component {
                 <AddContainer />
                 <MultiplyContainer />
                 <DivideContainer />
+                <SubtractContainer />
                 <ResultContainer />
             </div>
         )
