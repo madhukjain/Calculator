@@ -12,6 +12,12 @@ export const multiply = () => {
     }
 };
 
+export const divide = () => {
+    return {
+        type: actionType.DIVIDE
+    }
+};
+
 export const getResult = () => {
     return {
         type: actionType.RESULT

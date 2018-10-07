@@ -5,16 +5,18 @@ import NumbersContainer from "../containers/numbers/Numbers";
 import ResultContainer from "../containers/operations/Result";
 import OperationContainer from "../containers/Operation";
 import MultiplyContainer from "../containers/operations/Multiply";
+import DivideContainer from "../containers/operations/Divide";
 
 class App extends React.Component {
     render() {
         return (
             <div>
                 <OutputContainer />
-                <OperationContainer/>
+                <OperationContainer />
                 <NumbersContainer />
                 <AddContainer />
-                <MultiplyContainer/>
+                <MultiplyContainer />
+                <DivideContainer />
                 <ResultContainer />
             </div>
         )
